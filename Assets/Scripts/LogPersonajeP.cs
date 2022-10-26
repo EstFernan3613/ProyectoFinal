@@ -12,8 +12,10 @@ public class LogPersonajeP : MonoBehaviour
     public Rigidbody rb;
     public float fuerzaSalto = 8f;
     public bool puedoSaltar;
+
     public float velocidadInicial;
     public float velocidadAgachado;
+    
     public CapsuleCollider colParado;
     public CapsuleCollider colAgachado;
     public GameObject cabeza;
