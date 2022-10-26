@@ -18,4 +18,5 @@ public class RotacionAlrededor : MonoBehaviour
     {
         transform.RotateAround(ObjetoEstatico.transform.position, Vector3.up, velocidadRotar * Time.deltaTime);
     }
+
 }
