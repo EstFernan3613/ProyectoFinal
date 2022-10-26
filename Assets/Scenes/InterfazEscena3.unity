@@ -924,10 +924,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "En este mundo, tendras que enfrentarte a una serie de obst\xE1culos, en\r\nun
-    tipo \u201CParkour\u201D, donde tendras que tener cuidado, algunas pueden moverse
-    y pueden ser muy resbaladizas, asegurate de saber donde pisas, ten cuidado con
-    los pisos falsos y los cristales que se pueden rompar si pasas mucho tiempo encima
-    o saltas muchas veces, no queras caerte en un hielo profundo!"
+    tipo \u201CParkour\u201D, donde tendras que tener cuidado, algunos obstaculos
+    pueden moverse y pueden ser muy resbaladizas, asegurate de saber donde pisas,
+    ten cuidado con los pisos falsos y los cristales que se pueden romper si pasas
+    mucho tiempo encima o saltas muchas veces, no queras caerte en un hielo profundo!"
 --- !u!222 &1176736425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1221,11 +1221,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ten cuidado viajero, este lugar predomina el fr\xEDo y el hielo, donde
+  m_Text: "Ten cuidado viajero, en este lugar predomina el fr\xEDo y el hielo, donde
     tendr\xE1s que recolectar una calavera de hielo, la\r\nsegunda reliquia necesaria
-    para cumplir ti deseo, el cual servir\xE1 para realizar la\r\nofrenda al Brujo,
+    para cumplir tu deseo, el cual servir\xE1 para realizar la\r\nofrenda al Brujo,
     este ser\xE1 el segundo paso que daras para salvar a tu amante y revivir ese
-    amor."
+    amor de tu amante."
 --- !u!222 &1671806755
 CanvasRenderer:
   m_ObjectHideFlags: 0
