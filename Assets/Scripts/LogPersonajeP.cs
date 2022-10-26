@@ -15,7 +15,9 @@ public class LogPersonajeP : MonoBehaviour
 
     public float velocidadInicial;
     public float velocidadAgachado;
-    
+
+    public int velCorrer;
+
     public CapsuleCollider colParado;
     public CapsuleCollider colAgachado;
     public GameObject cabeza;
@@ -39,6 +41,34 @@ public class LogPersonajeP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if(Input.GetKey(KeyCode.LeftShift)&& !estoyAgachado && puedoSaltar)
+        {
+            velocidadMovimiento = velCorrer;
+            if(y > 0)
+            {
+                anim.SetBool("Correr",true);
+            }
+            else
+            {
+                anim.SetBool("Correr",false);
+            }
+        }
+        else
+        {
+            anim.SetBool("Correr", false);
+            if(estoyAgachado)
+            {
+                velocidadMovimiento = velocidadAgachado;
+            }
+            else if(puedoSaltar)
+            {
+                velocidadMovimiento = velocidadInicial;
+            }
+        }
+
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
@@ -60,7 +90,7 @@ public class LogPersonajeP : MonoBehaviour
             if(Input.GetKey(KeyCode.LeftControl))
             {
                 anim.SetBool("Agachado", true);
-                velocidadMovimiento = velocidadAgachado;
+                //velocidadMovimiento = velocidadAgachado;
                 colAgachado.enabled = true;
                 colParado.enabled = false;
 
@@ -72,11 +102,11 @@ public class LogPersonajeP : MonoBehaviour
                 if(logicaCabeza.contadorColision <= 0)
                 {
                     anim.SetBool("Agachado", false);
-                    velocidadMovimiento = velocidadInicial;
+                    //velocidadMovimiento = velocidadInicial;
 
                     cabeza.SetActive(false);
                     colAgachado.enabled = false;
-                    colParado. enabled = true;
+                    colParado.enabled = true;
                     estoyAgachado = false; 
                 }
                 

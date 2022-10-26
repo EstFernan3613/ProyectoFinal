@@ -257,8 +257,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.58, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2738967, z: 1}
+  m_Center: {x: 0, y: -0.15305181, z: 0}
 --- !u!23 &174568586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -564,8 +564,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.58, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.3122299, z: 1}
+  m_Center: {x: 0, y: -0.1338852, z: 0}
 --- !u!23 &329495528
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -834,8 +834,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.58, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2843682, z: 1}
+  m_Center: {x: 0, y: -0.14781609, z: 0}
 --- !u!23 &411961395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2536,8 +2536,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.58, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9999994, y: 1.3560901, z: 1}
+  m_Center: {x: 0, y: -0.11195511, z: 0}
 --- !u!23 &1216053171
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4046,10 +4046,11 @@ MonoBehaviour:
   y: 0
   anim: {fileID: 0}
   rb: {fileID: 1719741108}
-  fuerzaSalto: 8
+  fuerzaSalto: 6
   puedoSaltar: 0
   velocidadInicial: 0
   velocidadAgachado: 0
+  velCorrer: 8
   colParado: {fileID: 1719741109}
   colAgachado: {fileID: 1719741112}
   cabeza: {fileID: 1236545076}
