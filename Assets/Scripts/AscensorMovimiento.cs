@@ -13,14 +13,14 @@ public class AscensorMovimiento : MonoBehaviour
     int i;
     bool reversa;
     // Start is called before the first frame update
-    void Start()
+    void FixedStart()
     {
         transform.position = puntos[puntoInicio].position;
         i = puntoInicio;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
 
