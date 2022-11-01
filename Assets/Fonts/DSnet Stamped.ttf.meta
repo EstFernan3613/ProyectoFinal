@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fb932c6b0e14c8b44b914f23fdfcb039
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DSnet Stamped
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d3ad5eaabea9b054992b03b8bd9b98e4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
