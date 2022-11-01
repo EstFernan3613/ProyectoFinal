@@ -11,7 +11,7 @@ public class ManejoCanva : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        titulo.text = "Bienvenido a un nuevo nivel";
+        titulo.text = "Lucid Dreams";
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class ManejoCanva : MonoBehaviour
     }
 
     public void CambiarAP2()
-    {
+    { 
         panelM1.SetActive(false);
         panelM2.SetActive(true);
     }
