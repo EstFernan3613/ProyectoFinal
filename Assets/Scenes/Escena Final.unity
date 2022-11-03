@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1796,6 +1796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e9adc38851f6b4a9a1fbdd312f2604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fuerzaExtraSalto: 0
   velocidadMovimiento: 5
   velocidadRotacion: 200
   x: 0
@@ -1812,6 +1813,9 @@ MonoBehaviour:
   cabeza: {fileID: 901335089}
   logicaCabeza: {fileID: 901335090}
   estoyAgachado: 0
+  estoyAtacando: 0
+  AvanzoSolo: 0
+  pulsoGolpe: 10
 --- !u!136 &535905776
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3796,8 +3800,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804234580}
   m_LocalRotation: {x: 0.30812418, y: -0, z: -0, w: 0.9513462}
-  m_LocalPosition: {x: 0, y: 53.1, z: -198}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.0827, y: 171.3, z: -609.5}
+  m_LocalScale: {x: 3.1654, y: 3.1654, z: 3.1654}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 627875716}

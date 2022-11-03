@@ -21,7 +21,7 @@ public class LogicaBarraVida : MonoBehaviour
 
         if(vidaActual <= 0)
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
     }
 
