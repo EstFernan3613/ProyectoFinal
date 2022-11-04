@@ -23,10 +23,17 @@ public class Daño : MonoBehaviour
             if(Player.transform.position == respawnPoint.transform.position)
             {
                 logicaBarraVidaJugador.vidaActual = RestartVida;
+            
             }
+            else if(other.CompareTag("dañoEnemigo"))
+            {
+                logicaBarraVidaJugador.vidaActual -= daño;
+            }
+
             
         }
 
+       
     
     }
    
