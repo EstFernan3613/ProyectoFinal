@@ -48903,6 +48903,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.6
+    functionName: ActivarCollidersArmas
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.6333333
     functionName: AnanzoSolo
     data: 
@@ -48912,6 +48919,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.73333335
     functionName: DejarAvanzar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.76666665
+    functionName: DesactivarCollidersArmas
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
