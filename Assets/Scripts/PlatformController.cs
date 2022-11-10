@@ -49,19 +49,13 @@ public class PlatformController : MonoBehaviour
         moveToTheNext = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.SetParent(transform);
-        }
+        other.gameObject.transform.SetParent(transform);
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit(Collision other)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.SetParent(null);
-        }
+        other.gameObject.transform.SetParent(null);
     }
 }
