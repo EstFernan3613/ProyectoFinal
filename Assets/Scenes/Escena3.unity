@@ -241,11 +241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52da77811400ef245a68e69e6bc8bb28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.24
+      value: 41.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52da77811400ef245a68e69e6bc8bb28, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 335.58
+      value: 289.41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52da77811400ef245a68e69e6bc8bb28, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14660,11 +14660,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 50
-  logicaBarraVidaJugador: {fileID: 0}
+  logicaBarraVidaJugador: {fileID: 1690303317}
   "da\xF1o": 50
   RestartVida: 100
-  Player: {fileID: 0}
-  respawnPoint: {fileID: 0}
+  Player: {fileID: 1690303316}
+  respawnPoint: {fileID: 1939719182}
 --- !u!136 &1273517489
 CapsuleCollider:
   m_ObjectHideFlags: 0
