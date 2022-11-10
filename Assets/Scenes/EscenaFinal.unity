@@ -819,7 +819,7 @@ GameObject:
   - component: {fileID: 1359108263}
   - component: {fileID: 1359108262}
   m_Layer: 5
-  m_Name: Next1
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,16 +890,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1208372715}
-        m_TargetAssemblyTypeName: ManejoCanva, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2000864990}
+        m_TargetAssemblyTypeName: CambioEscenas, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Escena Final
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1359108263
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 0}
-  SonidoEscritura: {fileID: 1371613319599572598, guid: b7195ead1b347c14bb70d0e9524a4ab6, type: 3}
+  SonidoEscritura: {fileID: 0}
 --- !u!1 &1948709502
 GameObject:
   m_ObjectHideFlags: 0
