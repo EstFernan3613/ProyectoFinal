@@ -18,21 +18,20 @@ public class Daño : MonoBehaviour
         if(other.tag == "Player")
         {
             logicaBarraVidaJugador.vidaActual -= daño;
-            Player.transform.position = respawnPoint.transform.position;
-
-            if(Player.transform.position == respawnPoint.transform.position)
+            if(logicaBarraVidaJugador.vidaActual <= 0)
             {
+                Player.transform.position = respawnPoint.transform.position;
+                if(Player.transform.position == respawnPoint.transform.position)
+                {
                 logicaBarraVidaJugador.vidaActual = RestartVida;
-            
+                }
             }
-            else if(other.CompareTag("dañoEnemigo"))
-            {
-                logicaBarraVidaJugador.vidaActual -= daño;
-            }
+             
 
             
         }
-
+        
+        
        
     
     }

@@ -5,6 +5,11 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
 
+    public int hp;
+    public int dañoEspada;
+    public int dañoPuño;
+    
+
     public int rutina;
     public float cronometro;
     public Animator ani;
@@ -13,6 +18,7 @@ public class Enemigo : MonoBehaviour
 
     public GameObject target;
     public bool atacandoEnemigo;
+    public RangoEnemig rango;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,13 +64,13 @@ public class Enemigo : MonoBehaviour
         }
         else
         {
+
+            var lookPos = target.transform.position - transform.position;
+            lookPos.y = 0;
+            var rotation = Quaternion.LookRotation(lookPos);
             if(Vector3.Distance(transform.position, target.transform.position) > 1 && !atacandoEnemigo)
             {
-                
             
-                var lookPos = target.transform.position - transform.position;
-                lookPos.y = 0;
-                var rotation = Quaternion.LookRotation(lookPos);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
                 ani.SetBool("walk", false);
 
@@ -75,11 +81,11 @@ public class Enemigo : MonoBehaviour
             }
             else
             {
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
                 ani.SetBool("walk", false);
                 ani.SetBool("run", false);
 
-                ani.SetBool("attack", true);
-                atacandoEnemigo = true;
+                
             }
         }
     }
@@ -88,6 +94,28 @@ public class Enemigo : MonoBehaviour
     {
         ani.SetBool("attack", false);
         atacandoEnemigo = false;
+
+        rango.GetComponent<CapsuleCollider>().enabled = true;
         
     } 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "armaImpacto")
+        {
+            hp -= dañoEspada;
+        }
+        if(other.gameObject.tag == "golpeImpacto")
+        {
+            hp -= dañoPuño;
+        }
+
+        if(hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+
 }

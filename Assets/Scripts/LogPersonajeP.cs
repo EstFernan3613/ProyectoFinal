@@ -5,6 +5,10 @@ using UnityEngine;
 public class LogPersonajeP : MonoBehaviour
 {
 
+    [SerializeField] private Transform cameraTransform;
+
+    public bool conArma;
+
     public int fuerzaExtraSalto = 0;
     public float velocidadMovimiento = 5.0f;
     public float velocidadRotacion = 200.0f;
@@ -94,13 +98,25 @@ public class LogPersonajeP : MonoBehaviour
 
         
 
+
+        
+
         anim.SetFloat("VelX", x);
         anim.SetFloat("VelY", y);
 
+
         if(Input.GetKeyDown(KeyCode.Return) && puedoSaltar && !estoyAtacando)
         {
-            anim.SetTrigger("Golpeo");
-            estoyAtacando = true;
+
+            if(conArma)
+            {
+                anim.SetTrigger("Golpeo2");
+                estoyAtacando = true;
+            }else
+            {
+                anim.SetTrigger("Golpeo");
+                estoyAtacando = true;
+            }
         }
 
 
@@ -173,4 +189,7 @@ public class LogPersonajeP : MonoBehaviour
     {
         AvanzoSolo = false;
     }
+
+
+
 }
