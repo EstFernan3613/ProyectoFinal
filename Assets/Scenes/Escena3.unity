@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 25413326}
   - component: {fileID: 25413325}
-  - component: {fileID: 25413327}
   - component: {fileID: 25413328}
   m_Layer: 0
   m_Name: PlatformController
@@ -181,19 +180,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &25413327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 25413324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c5186463f92a543a0a821bff2f5b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 1690303310}
 --- !u!65 &25413328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -202,11 +188,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25413324}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.1258271, z: 1}
-  m_Center: {x: 0, y: 0.06291352, z: 0}
+  m_Size: {x: 1, y: 1.009971, z: 1}
+  m_Center: {x: 0, y: 0.004985657, z: 0}
 --- !u!1 &26933277
 GameObject:
   m_ObjectHideFlags: 0
