@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
+
+    public bool puedeMoverseSobre;
     public Rigidbody platformRB;
     public Transform[] platformPositions;
     public float platformSpeed;
@@ -39,6 +41,10 @@ public class PlatformController : MonoBehaviour
             {
                 nextPosition = 0;
             }
+        }
+        if(puedeMoverseSobre)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, platformPositions[nextPosition].position, platformSpeed * Time.deltaTime);
         }
     }
 
