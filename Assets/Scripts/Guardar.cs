@@ -20,12 +20,12 @@ public class Guardar : MonoBehaviour
 
     private void start()
     {
-        DontDestroyOnload(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     public void timedata(float value)
     {
-        PlayerPrefs.Setfloat("TimeData", value);
+        PlayerPrefs.SetFloat("TimeData", value);
     }
   
 }
