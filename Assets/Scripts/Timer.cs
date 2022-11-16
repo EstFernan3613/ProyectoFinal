@@ -36,5 +36,7 @@ public class Timer : MonoBehaviour
         cents = (int)((time - (int)time) * 100f);
 
         timertext.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, cents);
+
+        time.value = PlayerPrefs.GetFloat("TimeData", 0);
     }
 }
