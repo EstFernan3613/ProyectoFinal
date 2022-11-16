@@ -8,6 +8,7 @@ TagManager:
   - armaImpacto
   - golpeImpacto
   - JefeFinal
+  - opciones
   layers:
   - Default
   - TransparentFX
