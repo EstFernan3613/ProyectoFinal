@@ -1,31 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+ [System.Serializable]
 
-public class Guardar : MonoBehaviour
+public class Guardar 
 {
-    public static Guardar instance;
-    private void Awake()
-    {
-        if (instance== null)
-        {
-            instance = this;
-        }
-        else if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-     
-    }
+    public int cantidadCalaveras;
 
-    private void start()
+    public Guardar(Inventario inventario)
     {
-        DontDestroyOnLoad(gameObject);
+        cantidadCalaveras = inventario.Calaveras;
     }
-
-    public void timedata(float value)
-    {
-        PlayerPrefs.SetFloat("TimeData", value);
-    }
-  
 }

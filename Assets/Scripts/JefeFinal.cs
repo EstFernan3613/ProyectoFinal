@@ -271,6 +271,7 @@ public class JefeFinal : MonoBehaviour
             {
                 animJefe.SetTrigger("dead");
                 muerto = true;
+            
             }
         }
     }
