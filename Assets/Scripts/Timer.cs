@@ -37,5 +37,21 @@ public class Timer : MonoBehaviour
 
         timertext.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, cents);
 
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            SaveManager.SavePlayerdata(this);
+            Debug.Log("Datos guardados");
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            PlayerData playerData = SaveManager.LoadPlayerData();
+            time = playerData.time;
+            
+            transform.position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
+            Debug.Log("Datos cargados");
+
+
+        }
     }
 }

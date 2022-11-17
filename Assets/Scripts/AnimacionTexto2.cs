@@ -8,7 +8,7 @@ public class AnimacionTexto2 : MonoBehaviour
     string frase2 = "NO HAY VUEALTA ATRAS!" + " " +
                     "Necesitas un favor?" + " " +
                     "yo tambien necesito uno..." + " " +
-                    "busca la casa en el bosque, puede que vuelvas a ver a tu novia...";
+                    "busca la casa en el bosque, puede que vuelvas a ver a tu novia... Sigue las calaveras....";
  
  
  
